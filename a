@@ -1,0 +1,43 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.radian:password-encryptor:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-web:jar -> duplicate declaration of version (?) @ line 34, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------------------< com.radian:password-encryptor >--------------------
+[INFO] Building password-encryptor 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jasypt-maven-plugin:3.0.3:encrypt-value (default-cli) @ password-encryptor ---
+[INFO] Starting MavenCli v3.8.5 on CSEB04 with PID 2804 (E:\Softwares\apache-maven-3.8.5\lib\maven-embedder-3.8.5.jar started by krishna.prasad in E:\Spring-Practices\Password-Encryptor)
+[INFO] No active profile set, falling back to default profiles: default
+[INFO] Post-processing PropertySource instances
+[INFO] Converting PropertySource configurationProperties [org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource] to AOP Proxy
+[INFO] Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+[INFO] Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+[INFO] Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+[INFO] Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+[INFO] Started MavenCli in 0.654 seconds (JVM running for 1.926)
+[INFO] Active Profiles: Default
+[INFO] Encrypting value user@123
+[INFO] String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+[INFO] Encryptor config not found for property jasypt.encryptor.algorithm, using default value: PBEWITHHMACSHA512ANDAES_256
+[INFO] Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+[INFO] Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+[INFO] Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.iv-generator-classname, using default value: org.jasypt.iv.RandomIvGenerator
+[INFO] Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+[INFO] 
+ENC(+LPo/c/ULZKZBH3v9PhtocjGZsOsbyHVu/ZWjjM28fodDquI1fmmAybT3kel4Kxz)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.035 s
+[INFO] Finished at: 2022-12-08T15:23:35+04:00
+[INFO] ------------------------------------------------------------------------
